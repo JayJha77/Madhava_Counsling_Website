@@ -129,24 +129,61 @@
         <!-- Carousel Start -->
         <div class="container-fluid px-0">
     <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        
         <!-- Indicators -->
         <ol class="carousel-indicators">
-            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-label="First slide"></li>
             <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="3" aria-label="fourth slide"></li>
         </ol>
 
         <!-- Slides -->
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner">
             <div class="carousel-item active">
-    <img src="img/resized_image_1920x1080.png" class="carousel-image" alt="First slide">
-</div>
-
+                <img src="img/final_home_image2.png" class="carousel-img" alt="First slide">
+            </div>
             <div class="carousel-item">
-                <img src="img/Final_image3.png" class="carousel-image" alt="Second slide">
+                <img src="img/Final_image3.png" class="carousel-img" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img src="img/final_home_image4.png" class="carousel-img" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img src="img/final_home_image5.png" class="carousel-img" alt="fourth slide">
             </div>
         </div>
     </div>
 </div>
+
+<style>
+/* Common styling for all screens */
+.carousel-img {
+    display: block;
+    width: 100%;
+    height: 100vh;          /* Always fill screen height */
+    object-fit: cover;      /* Cover screen without distortion */
+    object-position: center;/* Keep center part visible */
+}
+
+/* Optional: tweak for mobile to avoid excessive cropping */
+@media (max-width: 768px) {
+    .carousel-img {
+        object-fit: contain;    /* Show full image */
+        background-color: #000; /* Fill background gaps */
+    }
+}
+
+/* Make indicators more visible on images */
+.carousel-indicators li {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.carousel-indicators .active {
+    background-color: #fff;
+}
+</style>
+
+
         <!-- Carousel End -->
 
 

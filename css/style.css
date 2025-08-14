@@ -122,6 +122,16 @@
     object-fit: cover; /* Makes image cover without stretching */
 }
 
+.carousel-img {
+    height: 100vh; /* Full screen height on desktop */
+    object-fit: cover; /* Ensures image fills without distortion */
+}
+
+@media (max-width: 768px) {
+    .carousel-img {
+        height: 50vh; /* Smaller height for mobile */
+    }
+}
 
 
 
